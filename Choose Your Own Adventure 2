@@ -1,0 +1,38 @@
+var user = prompt("Are you faint of heart").toUpperCase();
+
+switch(user){
+    case "YES":
+        console.log("You have no reason to be in a place like this.");
+        var anyway = prompt("Will you go anyway?").toUpperCase();
+        if(user == "YES" && anyway == "YES"){
+            console.log("You go in and you die. Sorry.");
+        }
+        else{
+            console.log("You leave. The end.");
+        }
+        break;
+        
+    case "NO":
+        console.log("Then proceed.");
+        var sound = prompt("You hear a sound. Do you keep going?").toUpperCase;
+        if(user == "NO" && sound == "YES" )
+        {
+            console.log("The sound was a monster and you die.");
+        }
+        else{
+            console.log("You are smart and you turn around a leave.");
+        }
+        break;
+        
+    case "MAYBE":
+        console.log("Being unsure is not wise.");
+        var choice = prompt("Do you go in?").toUpperCase();
+        if(user == "MAYBE" || choice == "YES")
+        {
+            console.log("You being unsure made you get eaten.")
+        }
+        break;
+        
+    default:
+        console.log("I don't understand. I only accept Yes No or Maybe.");
+}
