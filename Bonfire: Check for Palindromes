@@ -1,0 +1,13 @@
+function palindrome(str) {
+ noSpaces = str.replace(/\W+/g, '').toLowerCase();
+ if(noSpaces == str.replace(/\W+/g, '').split('').reverse().join('').toLowerCase()){
+  return true;
+}
+else{
+  return false;
+}
+}
+
+
+
+palindrome("eye");
