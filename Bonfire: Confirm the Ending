@@ -1,0 +1,23 @@
+function end(str, target) {
+ var split = str.split(' ');
+  
+  if(split.length === 1) {
+    if(str.substr(-1) === target) {
+    return true; 
+    }
+    else{
+      return false;
+    }
+  }
+  
+  else{
+    if(split[split.length - 1] === target) {
+      return true;
+    }
+    else{
+      return false;
+    }
+  }
+}
+
+end('Bastian', 'n');
