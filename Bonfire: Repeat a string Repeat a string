@@ -1,0 +1,18 @@
+function repeat(str, num) {
+  
+  var repeater = [];
+  
+  for (i = 0; i < num; i++){
+    
+    if(num < 0 ){
+      return "";
+    }
+    else{
+    repeater.push(str);
+    }
+  }
+  
+  return repeater.join('');
+}
+
+repeat('abc', 3);
