@@ -1,10 +1,9 @@
 function truncate(str, num) {
   
+  var split = str.split(' ');
+  
   if(str.length > num){
-    
-    var slice = str.slice(0, num);
-    
-    return slice + "...";
+    return split.slice(0,1) + "...";
   }
   
   else{
