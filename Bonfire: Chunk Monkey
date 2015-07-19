@@ -11,3 +11,18 @@ function chunk(arr, size) {
 }
 
 chunk(['a', 'b', 'c', 'd'], 2);
+
+Solution 2
+
+function chunk(arr, size) {
+  // Break it up.
+  var chunky = [];
+  var length = arr.length;
+  
+  for (i = 0; i < length; i+2){
+    chunky.push(arr.slice(i, i+= size));
+  }
+  return chunky;
+}
+
+chunk(['a', 'b', 'c', 'd'], 2);
