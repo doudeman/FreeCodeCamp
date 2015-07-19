@@ -1,0 +1,13 @@
+function chunk(arr, size) {
+  // Break it up.
+  var chunky = [];
+  i = 0;
+  length = arr.length;
+  
+  while (i < length){
+    chunky.push(arr.slice(i, i+= size));
+  }
+  return chunky;
+}
+
+chunk(['a', 'b', 'c', 'd'], 2);
