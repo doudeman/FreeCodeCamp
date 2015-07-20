@@ -11,3 +11,18 @@ function bouncer(arr) {
 }
 
 bouncer([7, 'ate', '', false, 9]);
+
+
+Answer 2
+
+function bouncer(arr) {
+  // Don't show a false ID to this bouncer.
+  var range = function(arr){
+    return (arr !== false && arr !== "" && arr !== 0 && arr !== null);
+  };
+
+  var filter = arr.filter(range);
+  return filter;
+}
+
+bouncer([7, 'ate', '', false, 9]);
