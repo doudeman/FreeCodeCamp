@@ -1,0 +1,13 @@
+unction bouncer(arr) {
+  // Don't show a false ID to this bouncer.
+  var falsey = new Boolean(false);
+  
+  var range = function(falsey){
+    return falsey;
+  };
+
+  var filter = arr.filter(range);
+  return filter;
+}
+
+bouncer([7, 'ate', '', false, 9]);
