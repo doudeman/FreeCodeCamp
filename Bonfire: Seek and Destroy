@@ -1,0 +1,18 @@
+function destroyer(arr) {
+  // Remove all the values
+  var arg1 = arguments[1];
+  var arg2 = arguments[2];
+  
+  function seek(value){
+     return  (value !== arg1) && (value !== arg2);
+    }
+ 
+  
+  var destroyed = arr.filter(seek);
+  
+  
+  
+ return destroyed;
+}
+
+destroyer([1, 2, 3, 1, 2, 3], 2, 3);
