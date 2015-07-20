@@ -1,6 +1,6 @@
-unction bouncer(arr) {
+function bouncer(arr) {
   // Don't show a false ID to this bouncer.
-  var falsey = new Boolean(false);
+  var falsey = Boolean(false);
   
   var range = function(falsey){
     return falsey;
