@@ -1,0 +1,12 @@
+function where(arr, num) {
+  // Find my place in this sorted array.
+  var newArr = arr.push(num);
+  function compare(a, b){
+    return a - b;
+  }
+  var sort = arr.sort(compare);
+  var index = arr.indexOf(num);
+  return index;
+}
+
+where([40, 60], 50);
