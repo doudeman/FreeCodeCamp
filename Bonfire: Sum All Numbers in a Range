@@ -1,0 +1,21 @@
+function sumAll(arr) {
+  //stores the output of the for loop
+  var container = [];
+  
+  //Find the min and max values of the arr
+  var max = Math.max.apply(null, arr);
+  var min = Math.min.apply(null, arr);
+  
+  //pushes values between min and max to the container arr
+  for (i = min - 1; i < max; i++){
+    container.push(i + 1);
+  }
+  
+  //Uses the reduce function to sum all of the items in the container.
+  var sum = container.reduce(function(a,b){
+    return a + b;
+  });
+  return(sum);
+}
+
+sumAll([1, 4]);
