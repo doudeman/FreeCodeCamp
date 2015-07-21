@@ -1,0 +1,14 @@
+function diff(arr1, arr2) {
+  // Same, same; but different.
+
+  var filtered1 = arr2.filter(function(value){
+    return arr1.indexOf(value) == -1;
+  });
+  var filtered2 = arr1.filter(function(value){
+    return arr2.indexOf(value) == -1;
+  });
+
+  return filtered1.concat(filtered2);
+}
+
+diff([1, 2, 3, 5], [1, 2, 3, 4, 5]);
