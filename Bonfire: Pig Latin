@@ -1,0 +1,16 @@
+function translate(str) {
+ 
+  if(/^[aeiou]/.test(str) === true){
+    return str + "way";
+  }
+  else if(/^..[aeiou]/.test(str) === true) {
+   return str.substr(2) + str.substr(0, 2) + "ay";
+  } 
+  else{
+   return str.substr(1) + str.substr(0,1) + "ay";
+  }
+ 
+  return str;
+}
+
+translate("consonant");
