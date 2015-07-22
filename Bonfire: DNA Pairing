@@ -1,0 +1,29 @@
+function pair(str) {
+  var match = [];
+  var pairs = ['T', 'A', 'G', 'C'];
+  var star = str.split('');
+  
+  for(i = 0; i < str.length; i++){
+    switch(str.charAt(i)){
+      case "A":
+        match.push([star[i] ,pairs[0]]);
+        break;
+      
+      case "T":
+        match.push([star[i] ,pairs[1]]);
+        break;
+        
+      case "C":
+        match.push([star[i] ,pairs[2]]);
+        break;
+      
+      case "G":
+        match.push([star[i] ,pairs[3]]);
+        break;
+        
+    }
+  }
+  return match;
+}
+
+pair("GCG");
