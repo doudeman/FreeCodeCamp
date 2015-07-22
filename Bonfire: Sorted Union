@@ -1,0 +1,18 @@
+function unite(arr1, arr2, arr3) {  
+  var i;
+  
+  //look for numbers in arr2 that are in arr1 and push numbers that don't show up to arr1
+  for (i in arr2) {
+    if (arr1.indexOf(arr2[i]) === -1) arr1.push(arr2[i]);
+  }
+  
+  //look for numbers in arr3 that are in arr1 and push numbers that don't show up to arr1
+  for (i in arr3) {
+    if (arr1.indexOf(arr3[i]) === -1) arr1.push(arr3[i]);
+  }
+  return arr1;
+}
+
+unite([1, 2, 3], [5, 2, 1, 4], [2, 1]); 
+
+
