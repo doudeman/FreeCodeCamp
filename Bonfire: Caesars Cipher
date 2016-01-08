@@ -1,0 +1,22 @@
+function rot13(encodedStr) {
+  var codeArr = encodedStr.split("");  // String to Array
+  var decodedArr = []; // Your Result goes here
+  // Only change code below this line 
+  for (var i = 0; i < codeArr.length; i++) {
+    if (codeArr[i].charCodeAt(0) === 32 || codeArr[i].charCodeAt(0) === 33 || codeArr[i].charCodeAt(0) === 63 || codeArr[i].charCodeAt(0) === 46) {
+          decodedArr.push(codeArr[i]);
+    } else if (codeArr[i].charCodeAt(0) > 77) {
+        decodedArr.push(String.fromCharCode(codeArr[i].charCodeAt(0) - 13));
+    } else if (codeArr[i].charCodeAt(0) <= 77) {
+        decodedArr.push(String.fromCharCode(codeArr[i].charCodeAt(0) + 13));
+      }
+    } 
+  
+  
+  // Only change code above this line
+return decodedArr.join(""); // Array to String
+  
+}
+
+// Change the inputs below to test
+rot13("SERR PBQR PNZC");
