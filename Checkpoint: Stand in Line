@@ -1,0 +1,16 @@
+// Setup
+var myArr = [1,2,3,4,5];
+
+function queue(arr, item) {
+  // Your code here
+  var que = arr.push(item); 
+  var shifted = arr.shift();
+  
+  
+  return shifted;  // Change this line
+}
+
+// Display Code
+console.log("Before: " + JSON.stringify(myArr));
+console.log(queue(myArr, 6)); // Modify this line to test
+console.log("After: " + JSON.stringify(myArr));
